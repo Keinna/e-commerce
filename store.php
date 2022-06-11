@@ -52,7 +52,7 @@
         </div>
         <div class="shop-item">
             <span class="shop-item-title">Coffee Cup</span>
-            <img class="shop-item-image">
+            <img class="shop-item-image" src="img/header-photo.jpg">
             <div class="shop-item-details">
                 <span class="shop-item-price">$6.99</span>
                 <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
@@ -68,32 +68,11 @@
         <span class="cart-quantity cart-header cart-column">QUANTITY</span>
     </div>
     <div class="cart-items">
-        <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="" width="100" height="100">
-                <span class="cart-item-title">T-Shirt</span>
-            </div>
-            <span class="cart-price cart-column">$19.99</span>
-            <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="1">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-            </div>
-        </div>
-        <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="" width="100" height="100">
-                <span class="cart-item-title">Album 3</span>
-            </div>
-            <span class="cart-price cart-column">$9.99</span>
-            <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="2">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-            </div>
-        </div>
+        <!-- will be filled by js -->
     </div>
     <div class="cart-total">
         <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">$39.97</span>
+        <span class="cart-total-price">$0</span>
     </div>
     <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
 </section>

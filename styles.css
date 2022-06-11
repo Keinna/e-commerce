@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: "Nature";
@@ -51,8 +50,8 @@
 
 * {
     box-sizing: border-box;
-    font-family: Raleway;
-    color: #777;
+    font-family: 'Nunito', sans-serif;
+    
 }
 
 html, body {
@@ -64,36 +63,57 @@ html, body {
 
 a{
     text-decoration: none;
+    color: #000;
 }
 
-.nav ul {
-    margin: 0;
+.logo{
+    width: 12rem;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem 2.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
 }
 
-.nav li {
-    display: inline;
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.nav a {
-    display: inline-block;
-    padding: .5em;
-    color: white;
-    text-decoration: none;
+.nav-item{
+    list-style: none;
+    padding: 0 1rem;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 0.3s ease;
+    position: relative;
 }
 
-.main-nav {
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
+.nav-item a:hover{
+    color: var(--primary-color);
 }
 
-.main-nav li {
-    padding: 0 5%;
+
+.nav-item a:hover,
+.nav-item a.active{
+ color: var(--primary-color);
+ 
 }
 
-.nav a:hover {
-    background-color: rgba(255, 255, 255, .3)
+
+.nav-item a:hover::after{
+    content: '';
+    width: 40%;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -4px;
+    left: 18px;
 }
 
 .main-header {
@@ -102,7 +122,8 @@ a{
     background-size: cover;
     background-blend-mode: multiply;
     background-position: 25% 75%;
-    height: 75vh;
+    height: 80vh;
+    box-shadow: 0px 15px 10px -15px #111; 
 }
 
 .header-text {
@@ -119,7 +140,7 @@ a{
 }
 
 .container {
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
@@ -202,39 +223,6 @@ a{
     background-color: #2D9CDB;
 }
 
-.tour-row {
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-.tour-row:last-child {
-    border: none;
-}
-
-.tour-item {
-    display: inline-block;
-    padding-right: .5em;
-}
-
-.tour-date {
-    color: #555;
-    width: 11%;
-    font-weight: bold;
-}
-
-.tour-city {
-    width: 24%;
-}
-
-.tour-arena {
-    width: 42%;
-}
-
-.tour-btn {
-    max-width: 19%;
-}
-
 .shop-item {
     margin: 30px;
 }
@@ -266,8 +254,8 @@ a{
 
 .shop-items {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .cart-header {
@@ -288,6 +276,7 @@ a{
 .cart-row {
     display: flex;
 }
+
 
 .cart-item {
     width: 45%;
@@ -312,7 +301,7 @@ a{
 .cart-item-image {
     width: 75px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .btn-danger {

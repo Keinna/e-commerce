@@ -1,53 +1,53 @@
 <?php include 'main.php'; ?>
 
-<h1 class="header-text">Get Outdoors. Explore.</h1>
+<h1 class="header-text">Shop.</h1>
 </header>
 <section class="container content-section">
-    <h2 class="section-header">Camping</h2>
+    <h2 class="section-header">Camping Gear</h2>
     <div class="shop-items">
         <div class="shop-item">
             <span class="shop-item-title">Tent</span>
-            <img class="shop-item-image" src="">
+            <img class="shop-item-image" src="img/tent.jpg">
             <div class="shop-item-details">
-                <span class="shop-item-price">$12.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                <span class="shop-item-price">$199.99</span>
+                <button class="btn  shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div>
         <div class="shop-item">
             <span class="shop-item-title">Hammock</span>
-            <img class="shop-item-image">
+            <img class="shop-item-image" src="img/hammock.jpg">
             <div class="shop-item-details">
-                <span class="shop-item-price">$14.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                <span class="shop-item-price">$39.99</span>
+                <button class="btn  shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div>
         <div class="shop-item">
             <span class="shop-item-title">Sleeping bag</span>
-            <img class="shop-item-image" ">
+            <img class="shop-item-image" src="img/sleeping-bag.jpg">
             <div class=" shop-item-details">
-            <span class="shop-item-price">$9.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                <span class="shop-item-price">$9.99</span>
+                <button class="btn shop-item-button" type="button">ADD TO CART</button>
+            </div>
         </div>
-    </div>
-    <div class="shop-item">
-        <span class="shop-item-title">Water bottle</span>
-        <img class="shop-item-image">
-        <div class="shop-item-details">
-            <span class="shop-item-price">$19.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        <div class="shop-item">
+            <span class="shop-item-title">Cooking gear</span>
+            <img class="shop-item-image" src="img/cooking.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn shop-item-button" type="button">ADD TO CART</button>
+            </div>
         </div>
-    </div>
     </div>
 </section>
 <section class="container content-section">
     <h2 class="section-header">MERCH</h2>
     <div class="shop-items">
         <div class="shop-item">
-            <span class="shop-item-title">T-Shirt</span>
-            <img class="shop-item-image">
+            <span class="shop-item-title">Backpack</span>
+            <img class="shop-item-image" src="img/backpack.jpg">
             <div class="shop-item-details">
-                <span class="shop-item-price">$19.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                <span class="shop-item-price">$79.99</span>
+                <button class="btn shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div>
         <div class="shop-item">
@@ -55,7 +55,7 @@
             <img class="shop-item-image" src="img/header-photo.jpg">
             <div class="shop-item-details">
                 <span class="shop-item-price">$6.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                <button class="btn shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@
         <strong class="cart-total-title">Total</strong>
         <span class="cart-total-price">$0</span>
     </div>
-    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    <button class="btn btn-purchase" type="button">PURCHASE</button>
 </section>
 
 <?php include 'footer.php'; ?>

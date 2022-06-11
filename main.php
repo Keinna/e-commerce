@@ -13,9 +13,10 @@
 <body>
     <header class="main-header">
         <nav class="nav main-nav">
-            <ul>
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="store.php">STORE</a></li>
-                <li><a href="about.php">ABOUT</a></li>
+            <a href="/"><img src="img/logo-black.png" alt="logo Outdoorsy" class="logo"></a>
+            <ul class="nav-items">
+                <li class="nav-item"><a class="active" href="index.php">HOME</a></li>
+                <li class="nav-item"><a href="store.php">STORE</a></li>
+                <li class="nav-item"><a href="about.php">ABOUT</a></li>
             </ul>
         </nav>

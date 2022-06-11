@@ -14,6 +14,12 @@ function ready(){
         var button = removeCartItemButtons [i]
         button.addEventListener('click', removeCartItem)
     }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++){
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
 }
 
 function removeCartItem(event){
@@ -23,6 +29,16 @@ function removeCartItem(event){
    //runs all the code when its called
    updateCartTotal()
 }
+
+function quantityChanged(event){
+    var input = event.target
+    //check if there is a number or it is not a negative number
+    if(isNaN(input.value) || input.value <= 0){
+        input.value = 1
+    }
+    updateCartTotal()
+}
+
 
 function updateCartTotal(){
     //only want 1 so select first element.
@@ -38,6 +54,9 @@ function updateCartTotal(){
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
+    //round to nearest full number
+    total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$'+ total
     
 }
+

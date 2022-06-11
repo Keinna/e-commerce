@@ -8,6 +8,19 @@
     font-style: normal;
 }
 @font-face {
+    font-family: "Vibes";
+    src: url("fonts/Vibes.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Organic";
+    src: url("fonts/Organic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Driftwood";
     src: url("fonts/Driftwood.ttf") format("truetype");
     font-weight: normal;
@@ -47,6 +60,10 @@ html, body {
     padding: 0;
     min-height: 100%;
     background-color: var(--bg-color);
+}
+
+a{
+    text-decoration: none;
 }
 
 .nav ul {
@@ -90,10 +107,9 @@ html, body {
 
 .header-text {
     text-align: center;
-    margin: .2rem 0;
-    font-size: 5rem;
-    font-family: "Nature";
-    letter-spacing: 4px;
+    margin: 2rem 0;
+    font-size: 6rem;
+    font-family: "Organic";
     color: var(--text-color);
 }
 
@@ -165,7 +181,7 @@ html, body {
 
 .btn-header{
     padding: 1rem 2rem;
-    margin-top: 25%;
+    margin-top: 20%;
     border: 1px solid white;
 }
 

@@ -3,7 +3,7 @@
 <h1 class="header-text">Get Outdoors. Explore.</h1>
 <div class="container">
     <div class="btn-wrapper">
-        <button type="button" class="btn btn-header">Go to Shop</button>
+        <a href="/store.php" type="button" class="btn btn-header">Go to Shop</a>
     </div>
 </div>
 </header>

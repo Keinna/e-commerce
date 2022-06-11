@@ -1,10 +1,43 @@
-var removeCartItemButtons = document.getElementsByClassName('btn-danger')
-//loop through all items inside cart
-for (var i = 0; i <removeCartItemButtons.length; i++){
-    //which element loop we are in
-    var button = removeCartItemButtons [i]
-    button.addEventListener('click', function(event){
-        //select cart row. which is parent of parent
-        var buttonClicked = event.target.parentElement.parentElement.remove()
-    })
+//check if document is still loading
+if(document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded', ready)
+} else{
+    ready()
+}
+
+//code for hooking up buttons will already work even if page is not loaded. It will wait for this event
+function ready(){
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    //loop through all items inside cart
+    for (var i = 0; i < removeCartItemButtons.length; i++){
+        //which element loop we are in
+        var button = removeCartItemButtons [i]
+        button.addEventListener('click', removeCartItem)
+    }
+}
+
+function removeCartItem(event){
+   //select cart row. which is parent of parent
+   var buttonClicked = event.target
+   buttonClicked.parentElement.parentElement.remove()
+   //runs all the code when its called
+   updateCartTotal()
+}
+
+function updateCartTotal(){
+    //only want 1 so select first element.
+    var cartItemContainer  = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++){
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        //remove dollarsign and make text a number
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$'+ total
+    
 }

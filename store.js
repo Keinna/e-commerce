@@ -26,6 +26,20 @@ function ready(){
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
+
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+}
+
+//alert buyer and remove everything from cart
+function purchaseClicked(event) {
+    alert ('Thank you for your purchase')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    //are there any children in this cart item?
+    while (cartItems.hasChildNodes()){
+        //remove child and use first child, while continue to loop till empty
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
 }
 
 function removeCartItem(event){
@@ -51,7 +65,6 @@ function addToCartClicked(event){
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-    console.log(title, price, imageSrc)
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
 }

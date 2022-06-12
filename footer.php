@@ -1,6 +1,6 @@
 <footer class="main-footer">
     <div class="container main-footer-container">
-        <h3 class="brand-name">Outdoor Shop</h3>
+        <img src="img/logo-white.png" alt="">
         <!-- <ul class="nav footer-nav">
             <li>
                 <a href="https://www.youtube.com" target="_blank">

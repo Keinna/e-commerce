@@ -18,5 +18,6 @@
                 <li class="nav-item"><a class="active" href="index.php">HOME</a></li>
                 <li class="nav-item"><a href="store.php">STORE</a></li>
                 <li class="nav-item"><a href="about.php">ABOUT</a></li>
+                <li class="nav-item "><a href="store.php"><img class="nav-item--cart" src="img/cart.svg" alt=""></a></li>
             </ul>
         </nav>

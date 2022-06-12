@@ -7,9 +7,79 @@
     </div>
 </div>
 </header>
-<section class="content-section container">
-    <h2 class="section-header">Preview Shop</h2>
-    <div>
+<section class="has-mg-y">
+    <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <p class="section-sub-title">- Our most wanted items -</p>
+        <div class="products">
+            <div class="product">
+                <img class="product-img" src="img/sleeping-bag.jpg" alt="">
+                <div class="product-desc">
+                    <span class="product-brand">Brand</span>
+                    <h5 class="product-name">Product Name</h5>
+                    <div class="product-price-cart-wrapper">
+                        <h4 class="product-price">$79</h4>
+                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="img/sleeping-bag.jpg" alt="">
+                <div class="product-desc">
+                    <span class="product-brand">Brand</span>
+                    <h5 class="product-name">Product Name</h5>
+                    <div class="product-price-cart-wrapper">
+                        <h4 class="product-price">$79</h4>
+                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="img/sleeping-bag.jpg" alt="">
+                <div class="product-desc">
+                    <span class="product-brand">Brand</span>
+                    <h5 class="product-name">Product Name</h5>
+                    <div class="product-price-cart-wrapper">
+                        <h4 class="product-price">$79</h4>
+                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="img/sleeping-bag.jpg" alt="">
+                <div class="product-desc">
+                    <span class="product-brand">Brand</span>
+                    <h5 class="product-name">Product Name</h5>
+                    <div class="product-price-cart-wrapper">
+                        <h4 class="product-price">$79</h4>
+                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="img/sleeping-bag.jpg" alt="">
+                <div class="product-desc">
+                    <span class="product-brand">Brand</span>
+                    <h5 class="product-name">Product Name</h5>
+                    <div class="product-price-cart-wrapper">
+                        <h4 class="product-price">$79</h4>
+                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="img/sleeping-bag.jpg" alt="">
+                <div class="product-desc">
+                    <span class="product-brand">Brand</span>
+                    <h5 class="product-name">Product Name</h5>
+                    <div class="product-price-cart-wrapper">
+                        <h4 class="product-price">$79</h4>
+                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
 

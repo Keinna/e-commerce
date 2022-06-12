@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('css/nav.css');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 @font-face {
@@ -49,6 +50,7 @@
     --text-color:#fff;
     --text-muted: #333;
     --border-radius: .3rem;
+    --italic-text: 'Lily Script One', cursive;
     
   }
 
@@ -70,58 +72,10 @@ a{
     color: #000;
 }
 
-.logo{
-    width: 12rem;
-}
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 1rem 2.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
-}
-
-.nav-items{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.nav-item{
-    list-style: none;
-    padding: 0 1rem;
-    font-weight: 800;
+.italic-text{
+    font-family: var(--italic-text);
     font-size: 20px;
-    transition: 0.3s ease;
-    position: relative;
-}
-
-.nav-item a:hover{
-    color: var(--primary-color);
-}
-
-
-.nav-item a:hover,
-.nav-item a.active{
- color: var(--primary-color);
- 
-}
-
-
-.nav-item a:hover::after{
-    content: '';
-    width: 40%;
-    height: 2px;
-    background-color: var(--primary-color);
-    position: absolute;
-    bottom: -4px;
-    left: 18px;
-}
-
-.nav-item--cart{
-height: 2rem;
+    letter-spacing: 2px;
 }
 
 .main-header {
@@ -146,7 +100,7 @@ height: 2rem;
     margin: 40px 0;
 }
 .container {
-    max-width: 960px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
@@ -165,12 +119,12 @@ height: 2rem;
 }
 .products{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-wrap: wrap;
 }
 
 .product{
-    width: 23%;
+    width: 30%;
     padding: 10px 12px;
     min-width: 250px;
     border: 1px solid rgba(0, 0, 0, .02);
@@ -267,23 +221,36 @@ flex-direction: column;
 
 .banner-box{
     background-color: #012920;
-background-image: url('img/cta.svg');
-background-attachment: fixed;
-background-size: cover;
-/* background by SVGBackgrounds.com */
-min-width: 440px;
-height: 30vh;
-text-align: center;
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+    background-image: url('img/banner-brochure.png');
+    background-size: cover;
+    /* background by SVGBackgrounds.com */
+    min-width: 49%;
+    height: 40vh;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    text-shadow: 1px 1px #000;
+    padding: 20px 50px;
+}
+
+.banner-box-2{
+    background-image: url('img/small-banner.jpg');
+}
+
+.banner-box-2-p{
+    margin: 0 0 2rem 0;
 }
 
 .social-icon{
-    color: white;
-    width: 25px;
+    fill:#FFF;
+    width: 35px;
+}
+
+.social-icon:hover{
+   border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
 }
 
 .banner-box-lg{
@@ -291,13 +258,25 @@ flex-direction: column;
     margin-top: 20px;
     color: white;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    background-image: url('img/large-banner.jpg');
-   height: 40vh;
-   min-width: 920px;
-   background-size: cover;
-   background-position: 25% 85%;
+    background-image: url('img/cta.svg');
+    height: 40vh;
+    width:100%;
+    background-size: cover;
+    background-position: 25% 85%;
+    text-shadow: 1px 1px #000;
+}
+
+.banner-box-lg-title{
+    margin: 1rem 0 0 0;
+}
+
+.banner-box-lg-subtitle{
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    font-size: 20px;
 }
 .main-footer {
     background-color: var(--primary-color);
@@ -358,6 +337,7 @@ flex-direction: column;
 .btn-primary:hover {
     background-color: var(--primary-color);
     border: 2px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
 }
 
 .shop-item {

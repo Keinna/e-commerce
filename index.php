@@ -10,7 +10,7 @@
 <section class="has-mg-y featured-products">
     <div class="container">
         <h2 class="section-title">Featured Products</h2>
-        <p class="section-sub-title">- Our most wanted items -</p>
+        <p class="section-sub-title italic-text">- Our most wanted items -</p>
         <div class="products">
             <div class="product">
                 <img class="product-img" src="img/sleeping-bag.jpg" alt="">
@@ -92,7 +92,7 @@
 <section class="has-mg-y new-arrivals">
     <div class="container">
         <h2 class="section-title">New arrivals</h2>
-        <p class="section-sub-title">- Get your fresh gear -</p>
+        <p class="section-sub-title italic-text">- Get your fresh gear -</p>
         <div class="products">
             <div class="product">
                 <img class="product-img" src="img/sleeping-bag.jpg" alt="">
@@ -168,21 +168,24 @@
     <div class="container">
         <div class="banners-sm">
             <div class="banner-box">
-                <h2>heading</h2>
-                <p>paragraph</p>
-                <a class="btn btn-primary">Shop now</a>
+                <h2>Our new brochure is out!</h2>
+                <a href"#" class="btn btn-primary">Check brochure</a>
             </div>
-            <div class="banner-box">
-                <h2>heading</h2>
-                <p>paragraph</p>
-                <a class="btn btn-primary">Shop now</a>
+            <div class="banner-box banner-box-2">
+                <h2>Using our gear outdoors?</h2>
+                <p class="banner-box-2-p italic-text">- Let us know on instagram -</p>
+                <a href="#"><img class="social-icon" src="img/icon-instagram.svg" alt=""></a>
+
             </div>
         </div>
         <div class="banners-large">
             <div class="banner-box-lg">
-                <h2>Using out gear?</h2>
-                <p>-Let us know on instagram-</p>
-                <img class="social-icon" src="img/icon-instagram.svg" alt="">
+                <h2 class="banner-box-lg-title">Maintenance and Repair services</h2>
+                <p>Ai...something broke?<br>
+                    Or do you want your gear checked for Maintenance?
+                </p>
+                <p class="italic-text banner-box-lg-subtitle">- We can help you out! -</p>
+                <a href="#" class="btn btn-primary">Check services</a>
             </div>
         </div>
     </div>

@@ -261,8 +261,8 @@ flex-direction: column;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-image: url('img/cta.svg');
-    height: 40vh;
+    background-image: url('img/service-banner.jpg');
+    height: 45vh;
     width:100%;
     background-size: cover;
     background-position: 25% 85%;
@@ -277,6 +277,19 @@ flex-direction: column;
     font-weight: bold;
     margin: 0 0 1rem 0;
     font-size: 20px;
+}
+.newsletter{
+    background-color: var(--secondary-color);
+    background-image: url('img/cta.svg');
+    height: 20vh;
+}
+.newsletter-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    
 }
 .main-footer {
     background-color: var(--primary-color);

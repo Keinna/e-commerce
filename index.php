@@ -191,6 +191,24 @@
     </div>
 </section>
 
+<section class="has-mg-y">
+
+    <div class="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-text">
+                    <h4>Sign up for our newsletter</h4>
+                    <p>Be the first to know about our special offers</p>
+                </div>
+                <div class="news-form">
+                    <input type="text" placeholder="Your email address">
+                    <button type="submut">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <?php include 'footer.php'; ?>
 </body>

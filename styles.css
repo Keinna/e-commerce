@@ -1,6 +1,6 @@
 @import url('css/nav.css');
-@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 @font-face {
     font-family: "Nature";
@@ -50,13 +50,13 @@
     --text-color:#fff;
     --text-muted: #333;
     --border-radius: .3rem;
-    --italic-text: 'Lily Script One', cursive;
+    --italic-text: 'Organic', cursive;
     
   }
 
 * {
     box-sizing: border-box;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Lato', sans-serif;
 
 }
 
@@ -74,8 +74,9 @@ a{
 
 .italic-text{
     font-family: var(--italic-text);
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .main-header {
@@ -177,7 +178,21 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+.product-amount-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+.product-amount{
+    padding: 0 15px;
+}
+.bi-dash-circle{
+    color: #EB5757;
+}
 
+bi-plus-circle{
+    color: var(--secondary-color);
+}
 .cta{
 background-color: #012920;
 background-image: url('img/cta.svg');
@@ -268,8 +283,12 @@ flex-direction: column;
     background-position: 25% 85%;
     text-shadow: 1px 1px #000;
 }
+.banner-box-title{
+    background-color: var(--secondary-color);
+    padding: 5px;
+}
 
-.banner-box-lg-title{
+.banner-box-title--lg{
     margin: 1rem 0 0 0;
 }
 
@@ -282,6 +301,7 @@ flex-direction: column;
     background-color: var(--secondary-color);
     background-image: url('img/cta.svg');
     height: 20vh;
+    
 }
 .newsletter-wrapper{
     display: flex;

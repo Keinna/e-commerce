@@ -11,73 +11,20 @@
     <div class="container">
         <h2 class="section-title">Featured Products</h2>
         <p class="section-sub-title italic-text">- Our most wanted items -</p>
-        <div class="products">
-            <div class="product">
+        <div class="products" id="products">
+
+
+            <!-- <div class="product">
                 <img class="product-img" src="img/sleeping-bag.jpg" alt="">
                 <div class="product-desc">
                     <span class="product-brand">Brand</span>
                     <h5 class="product-name">Product Name</h5>
                     <div class="product-price-cart-wrapper">
                         <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                        <a href="#"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product-img" src="img/hammock.jpg" alt="">
-                <div class="product-desc">
-                    <span class="product-brand">Brand</span>
-                    <h5 class="product-name">Product Name</h5>
-                    <div class="product-price-cart-wrapper">
-                        <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img class="product-img" src="img/cooking.jpg" alt="">
-                <div class="product-desc">
-                    <span class="product-brand">Brand</span>
-                    <h5 class="product-name">Product Name</h5>
-                    <div class="product-price-cart-wrapper">
-                        <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img class="product-img" src="img/hammock.jpg" alt="">
-                <div class="product-desc">
-                    <span class="product-brand">Brand</span>
-                    <h5 class="product-name">Product Name</h5>
-                    <div class="product-price-cart-wrapper">
-                        <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img class="product-img" src="img/tent.jpg" alt="">
-                <div class="product-desc">
-                    <span class="product-brand">Brand</span>
-                    <h5 class="product-name">Product Name</h5>
-                    <div class="product-price-cart-wrapper">
-                        <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img class="product-img" src="img/sleeping-bag.jpg" alt="">
-                <div class="product-desc">
-                    <span class="product-brand">Brand</span>
-                    <h5 class="product-name">Product Name</h5>
-                    <div class="product-price-cart-wrapper">
-                        <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -101,7 +48,7 @@
                     <h5 class="product-name">Product Name</h5>
                     <div class="product-price-cart-wrapper">
                         <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                        <a href="#"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -112,7 +59,7 @@
                     <h5 class="product-name">Product Name</h5>
                     <div class="product-price-cart-wrapper">
                         <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                        <a href="#"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -123,7 +70,7 @@
                     <h5 class="product-name">Product Name</h5>
                     <div class="product-price-cart-wrapper">
                         <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                        <a href="#"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -134,7 +81,7 @@
                     <h5 class="product-name">Product Name</h5>
                     <div class="product-price-cart-wrapper">
                         <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                        <a href="#"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -145,7 +92,7 @@
                     <h5 class="product-name">Product Name</h5>
                     <div class="product-price-cart-wrapper">
                         <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                        <a href="#"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -156,7 +103,7 @@
                     <h5 class="product-name">Product Name</h5>
                     <div class="product-price-cart-wrapper">
                         <h4 class="product-price">$79</h4>
-                        <a href="#"><img class="product-cart" src="/img/cart.svg" alt=""></a>
+                        <a href="#"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -168,11 +115,11 @@
     <div class="container">
         <div class="banners-sm">
             <div class="banner-box">
-                <h2>Our new brochure is out!</h2>
+                <h2 class="banner-box-title">Our new brochure is out!</h2>
                 <a href"#" class="btn btn-primary">Check brochure</a>
             </div>
             <div class="banner-box banner-box-2">
-                <h2>Using our gear outdoors?</h2>
+                <h2 class="banner-box-title">Using our gear outdoors?</h2>
                 <p class="banner-box-2-p italic-text">- Let us know on instagram -</p>
                 <a href="#"><img class="social-icon" src="img/icon-instagram.svg" alt=""></a>
 
@@ -180,11 +127,11 @@
         </div>
         <div class="banners-large">
             <div class="banner-box-lg">
-                <h2 class="banner-box-lg-title">Maintenance and Repair services</h2>
+                <h2 class="banner-box-title banner-box-title--lg">Maintenance and Repair services</h2>
                 <p>Ai...something broke?<br>
                     Or do you want your gear checked for Maintenance?
                 </p>
-                <p class="italic-text banner-box-lg-subtitle">- We can help you out! -</p>
+                <p class="banner-box-2-p italic-text">- We can help you out! -</p>
                 <a href="#" class="btn btn-primary">Check services</a>
             </div>
         </div>

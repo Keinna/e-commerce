@@ -127,35 +127,13 @@
     
 // }
 
-var products = document.getElementById('products')
-var productItemsData = [
-    {
-        id:"gfdgdf",
-        name:'tent',
-        price: 45,
-        desc: "Lorem blabla",
-        img: 'img/sleeping-bag.jpg'
-    },
-    {
-        id:"gdfdf",
-        name:'tent',
-        price: 45,
-        desc: "Lorem blabla",
-        img: 'img/hammock.jpg'
-    },
-    {
-        id:"gdfg",
-        name:'tenerfsdt',
-        price: 40,
-        desc: "Lorem blabla",
-        img: 'img/sleeping-bag.jpg'
-    },
-]
+var products = document.getElementsByClassName('products')[0]
+
 
 //update amount in cart nav + get data || nothing if there is no data
 var shoppingCartAmount = JSON.parse(localStorage.getItem("data")) || [];
 //arrow function
-var generateProducts =()=>{
+var generateProducts = () =>{
     //map wil target 1 by 1
     return (products.innerHTML = productItemsData.map((x) => {
         var{id, name, price, desc, img} = x
@@ -197,25 +175,31 @@ let increment = (id) =>{
     }else{
         checkAmountinCart.item += 1;
     }
-     //set data inside localstorage
-    localStorage.setItem("data", JSON.stringify(shoppingCartAmount))
+
     update(selectedItem.id);
- 
+      //set data inside localstorage
+      localStorage.setItem("data", JSON.stringify(shoppingCartAmount))
 }
 
 var decrement = (id) =>{
     var selectedItem = id;
     var checkAmountinCart = shoppingCartAmount.find((x) => x.id === selectedItem.id);
+    //fix error when cart is empty. Everytime when search is undefind. stop
+    if (checkAmountinCart === undefined) return
     // don't go below 0. Stop statement.
-    if(checkAmountinCart.item === 0 ){
+    else if(checkAmountinCart.item === 0 ){
         return;
     }
     else{
         checkAmountinCart.item -= 1;
     }
-    //set data inside localstorage
-    localStorage.setItem("data", JSON.stringify(shoppingCartAmount))
+   
+ //keep a good the on the order!!!!
     update(selectedItem.id)
+       //target all objects. Check item. Select all objects that dont have 0. Set data back to cart
+       shoppingCartAmount = shoppingCartAmount.filter((x) => x.item !== 0);
+     //set data inside localstorage
+     localStorage.setItem("data", JSON.stringify(shoppingCartAmount))
 }
 
 var update = (id) => {
@@ -227,9 +211,12 @@ var update = (id) => {
 
 var calculateItemsCart = () => {
  var cartItemsBadge = document.getElementById('cart-amount');
- //only item for calc number. x=previous and y =next number. 0 =deafult
+ //only item for calc number. x=previous and y =next number. 0 =default
+//  The reducer walks through the array element-by-element, at each step adding the current array value to the result from the previous step
  cartItemsBadge.innerHTML = shoppingCartAmount.map((x) => x.item).reduce((x,y) => x + y, 0);
 }
 
 // everytime app loads function will run
 calculateItemsCart();
+
+

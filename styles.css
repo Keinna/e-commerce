@@ -86,16 +86,17 @@ a{
     background-size: cover;
     background-blend-mode: multiply;
     background-position: 25% 75%;
-    height: 80vh;
+    height: 90vh;
     box-shadow: 0px 15px 10px -15px #111; 
 }
 
-.header-text {
+.header-title {
     text-align: center;
-    margin: 2rem 0;
+    padding-top: 7rem;
     font-size: 6rem;
     font-family: "Organic";
     color: var(--text-color);
+    margin: 0;
 }
 
 .has-mg-y{
@@ -354,7 +355,7 @@ flex-direction: column;
 
 .btn-header{
     padding: 1rem 2rem;
-    margin-top: 20%;
+    margin-top: .8rem;
     border: 1px solid white;
 }
 
@@ -510,4 +511,22 @@ flex-direction: column;
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+}
+
+.shopping-alert{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+.shopping-alert-text{
+    font-family: 'Firewood';
+    font-size: 3.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 1rem 0;
 }

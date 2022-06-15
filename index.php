@@ -1,11 +1,10 @@
 <?php include 'main.php'; ?>
 
-<h1 class="header-text">Get Outdoors. Explore.</h1>
-<div class="container">
-    <div class="btn-wrapper">
-        <a href="/store.php" type="button" class="btn btn-header">Go to Shop</a>
-    </div>
+<h1 class="header-title">Get Outdoors. Explore.</h1>
+<div class="btn-wrapper">
+    <a href="/store.php" class="btn btn-header">Go to Shop</a>
 </div>
+
 </header>
 <section class="has-mg-y featured-products">
     <div class="container">
@@ -17,7 +16,7 @@
 
         </div>
     </div>
-
+    </div>
 </section>
 
 <section class="cta has-mg-y">
@@ -26,7 +25,7 @@
     <a href="#" class="btn btn-primary">Buy now</a>
 </section>
 
-<section class="has-mg-y new-arrivals">
+<!-- <section class="has-mg-y new-arrivals">
     <div class="container">
         <h2 class="section-title">New arrivals</h2>
         <p class="section-sub-title italic-text">- Get your fresh gear -</p>
@@ -99,7 +98,8 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
 
 <section class="has-mg-y banners">
     <div class="container">

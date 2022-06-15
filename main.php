@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <script src="store.js" async></script>
+    <script src="js/data.js" async></script>
+    <script src="js/store.js" async></script>
+    <script src="js/cart.js" async></script>
     <title>E-commerce project</title>
 </head>
 
@@ -20,13 +22,11 @@
                 <li class="nav-item"><a href="store.php">STORE</a></li>
                 <li class="nav-item"><a href="about.php">ABOUT</a></li>
                 <li class="nav-item ">
-                    <a href="store.php">
+                    <a href="cart.php">
                         <div class="nav-cart">
                             <i class="bi bi-cart"></i>
                             <div class="cart-amount" id="cart-amount">0</div>
                         </div>
-
-
                     </a>
                 </li>
             </ul>

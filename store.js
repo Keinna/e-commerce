@@ -211,7 +211,14 @@ var decrement = (id) =>{
 }
 
 var update = (id) => {
-    let amount = shoppingCartAmount.find((x) => x.id === id);
+    var amount = shoppingCartAmount.find((x) => x.id === id);
     document.getElementById(id).innerHTML = amount.item;
-    console.log(amount.item)
+    //only trigger when updates
+    calculateItemsCart()
 };
+
+var calculateItemsCart = () => {
+ var cartItemsBadge = document.getElementById('cart-amount');
+ //only item for calc number. x=previous and y =next number. 0 =deafult
+ cartItemsBadge.innerHTML = shoppingCartAmount.map((x) => x.item).reduce((x,y) => x + y, 0);
+}

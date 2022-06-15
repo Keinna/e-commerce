@@ -23,7 +23,7 @@
                     <a href="store.php">
                         <div class="nav-cart">
                             <i class="bi bi-cart"></i>
-                            <div class="cart-amount">0</div>
+                            <div class="cart-amount" id="cart-amount">0</div>
                         </div>
 
 

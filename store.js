@@ -152,15 +152,16 @@ var productItemsData = [
     },
 ]
 
-//update amount in cart nav
-var shoppingCartAmount = [];
+//update amount in cart nav + get data || nothing if there is no data
+var shoppingCartAmount = JSON.parse(localStorage.getItem("data")) || [];
 //arrow function
 var generateProducts =()=>{
     //map wil target 1 by 1
     return (products.innerHTML = productItemsData.map((x) => {
         var{id, name, price, desc, img} = x
-        return `
-    
+        //if you can find something than store. If not return empty arry
+        var searchAmount = shoppingCartAmount.find((x) => x.id === id) || []
+        return`
         <div id=product-id${id} class="product">
                     <img class="product-img" src="${img}" alt="">
                     <div class="product-desc">
@@ -171,7 +172,8 @@ var generateProducts =()=>{
                             <h4 class="product-price">${price}</h4>
                             <div class="product-amount-wrapper">
                                 <i onclick="decrement(${id})" class="bi bi-dash-circle"></i>
-                                <div id=${id} class="product-amount">0</div>
+                                <div id=${id} class="product-amount">
+                                ${searchAmount.item === undefined ? 0 : searchAmount.item}</div>
                                 <i onclick="increment(${id})" class="bi bi-plus-circle"></i>
                             </div>
                         </div>
@@ -195,8 +197,12 @@ let increment = (id) =>{
     }else{
         checkAmountinCart.item += 1;
     }
-  update(selectedItem.id);
+     //set data inside localstorage
+    localStorage.setItem("data", JSON.stringify(shoppingCartAmount))
+    update(selectedItem.id);
+ 
 }
+
 var decrement = (id) =>{
     var selectedItem = id;
     var checkAmountinCart = shoppingCartAmount.find((x) => x.id === selectedItem.id);
@@ -207,6 +213,8 @@ var decrement = (id) =>{
     else{
         checkAmountinCart.item -= 1;
     }
+    //set data inside localstorage
+    localStorage.setItem("data", JSON.stringify(shoppingCartAmount))
     update(selectedItem.id)
 }
 
@@ -222,3 +230,6 @@ var calculateItemsCart = () => {
  //only item for calc number. x=previous and y =next number. 0 =deafult
  cartItemsBadge.innerHTML = shoppingCartAmount.map((x) => x.item).reduce((x,y) => x + y, 0);
 }
+
+// everytime app loads function will run
+calculateItemsCart();

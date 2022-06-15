@@ -14,17 +14,7 @@
         <div class="products" id="products">
 
 
-            <!-- <div class="product">
-                <img class="product-img" src="img/sleeping-bag.jpg" alt="">
-                <div class="product-desc">
-                    <span class="product-brand">Brand</span>
-                    <h5 class="product-name">Product Name</h5>
-                    <div class="product-price-cart-wrapper">
-                        <h4 class="product-price">$79</h4>
-                        <a href="#"><i class="bi bi-cart"></i></a>
-                    </div>
-                </div>
-            </div> -->
+
         </div>
     </div>
 

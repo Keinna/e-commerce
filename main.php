@@ -14,7 +14,7 @@
 <body>
     <header class="main-header">
         <nav class="nav main-nav">
-            <a href="/"><img src="img/logo-black.png" alt="logo Outdoorsy" class="logo"></a>
+            <a href="/"><img src="img/logo-white.png" alt="logo Outdoorsy" class="logo"></a>
             <ul class="nav-items">
                 <li class="nav-item"><a class="active" href="index.php">HOME</a></li>
                 <li class="nav-item"><a href="store.php">STORE</a></li>

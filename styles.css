@@ -43,15 +43,16 @@
 :root {
     --bg-color: #fff;
     --primary-color: #012920;
-    --secondary-color: #0a5c4a;
-    --secondary-color-hover:rgba(10, 92, 74, 0.663);
-    --tertiary-color:#83fff3;
-    --accent-color: #011d1a;
+    --secondary-color: #195038;
+    --secondary-color-hover:#417A4A;
+    --tertiary-color:#73A559;
+    --accent-color: #417A4A ;
     --text-color:#fff;
     --text-muted: #333;
     --border-radius: .3rem;
     --italic-text: 'Organic', cursive;
-    
+     /* extra colors in palette yellow/sand #F9F871 light green #B1CF64 */
+    /* https://mycolor.space/ */
   }
 
 * {
@@ -69,7 +70,7 @@ html, body {
 
 a{
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 .italic-text{
@@ -190,7 +191,7 @@ a{
     color: #EB5757;
 }
 
-bi-plus-circle{
+.bi-plus-circle{
     color: var(--secondary-color);
 }
 .cta{

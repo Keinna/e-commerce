@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--primary-color);
     padding: 1rem 2.5rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
 }
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    color: white;
 }
 
 .nav-item{
@@ -33,7 +33,7 @@
 
 .nav-item a:hover,
 .nav-item a.active{
- color: var(--primary-color);
+ color: var(--accent-color);
  
 }
 
@@ -42,7 +42,7 @@
     content: '';
     width: 40%;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     position: absolute;
     bottom: -4px;
     left: 18px;

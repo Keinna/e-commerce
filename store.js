@@ -128,37 +128,40 @@
 // }
 
 var products = document.getElementById('products')
-var productsItemsData = [
+var productItemsData = [
     {
-        id:"bla",
+        id:"gfdgdf",
         name:'tent',
         price: 45,
         desc: "Lorem blabla",
         img: 'img/sleeping-bag.jpg'
     },
     {
-        id:"bla2",
+        id:"gdfdf",
         name:'tent',
         price: 45,
         desc: "Lorem blabla",
         img: 'img/hammock.jpg'
     },
     {
-        id:"bla3",
+        id:"gdfg",
         name:'tenerfsdt',
         price: 40,
         desc: "Lorem blabla",
         img: 'img/sleeping-bag.jpg'
     },
 ]
+
+//update amount in cart nav
+var shoppingCartAmount = [];
 //arrow function
 var generateProducts =()=>{
     //map wil target 1 by 1
-    return (products.innerHTML = productsItemsData.map((x) => {
+    return (products.innerHTML = productItemsData.map((x) => {
         var{id, name, price, desc, img} = x
         return `
     
-        <div class="product">
+        <div id=product-id${id} class="product">
                     <img class="product-img" src="${img}" alt="">
                     <div class="product-desc">
                         <span class="product-brand">Brand</span>
@@ -167,9 +170,9 @@ var generateProducts =()=>{
                         <div class="product-price-cart-wrapper">
                             <h4 class="product-price">${price}</h4>
                             <div class="product-amount-wrapper">
-                                <i class="bi bi-dash-circle"></i>
-                                <div class="product-amount">0</div>
-                                <i class="bi bi-plus-circle"></i>
+                                <i onclick="decrement(${id})" class="bi bi-dash-circle"></i>
+                                <div id=${id} class="product-amount">0</div>
+                                <i onclick="increment(${id})" class="bi bi-plus-circle"></i>
                             </div>
                         </div>
                     </div>
@@ -179,3 +182,36 @@ var generateProducts =()=>{
 }
 
 generateProducts();
+
+let increment = (id) =>{
+    let selectedItem = id;
+    let checkAmountinCart = shoppingCartAmount.find((x) => x.id === selectedItem.id);
+
+    if(checkAmountinCart === undefined ){
+        shoppingCartAmount.push({
+            id: selectedItem.id,
+            item: 1,
+        });
+    }else{
+        checkAmountinCart.item += 1;
+    }
+  update(selectedItem.id);
+}
+var decrement = (id) =>{
+    var selectedItem = id;
+    var checkAmountinCart = shoppingCartAmount.find((x) => x.id === selectedItem.id);
+    // don't go below 0. Stop statement.
+    if(checkAmountinCart.item === 0 ){
+        return;
+    }
+    else{
+        checkAmountinCart.item -= 1;
+    }
+    update(selectedItem.id)
+}
+
+var update = (id) => {
+    let amount = shoppingCartAmount.find((x) => x.id === id);
+    document.getElementById(id).innerHTML = amount.item;
+    console.log(amount.item)
+};

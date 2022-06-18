@@ -387,6 +387,11 @@ flex-direction: column;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
 }
 
+.btn-delete{
+    background-color: #EB5757;
+
+}
+
 .shop-item {
     margin: 30px;
 }
@@ -489,4 +494,11 @@ flex-direction: column;
     color: white;
     padding: .4rem;
     border-radius: var(--border-radius);
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

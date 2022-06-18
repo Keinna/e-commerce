@@ -101,6 +101,8 @@ let update = (id) => {
     document.getElementById(id).innerHTML = amount.item;
     //only trigger when updates
     calculateItemsCart()
+    //update checkout amount
+    totalAmount();
 };
 
 let removeItem = (id) => {
@@ -108,7 +110,17 @@ let removeItem = (id) => {
  shoppingCartAmount = shoppingCartAmount.filter((x) => x.id !== selectedItem.id);
  //rerender items
  generateCartItems()
+ totalAmount();
+ calculateItemsCart()
  localStorage.setItem("data", JSON.stringify(shoppingCartAmount))
+}
+
+let clearCart = () =>{
+    shoppingCartAmount = []
+    generateCartItems();
+    calculateItemsCart()
+    localStorage.setItem("data", JSON.stringify(shoppingCartAmount))
+
 }
 
 let totalAmount = ()=>{
@@ -119,8 +131,11 @@ let totalAmount = ()=>{
             return item * search.price
         }).reduce((x,y)=> x + y, 0);
         label.innerHTML = `
-        <h2>Total price: ${amount}</h2>
-        
+        <h2>Total price:$ ${amount}</h2>
+        <div class="btn-cart-wrapper">
+        <button onclick="clearCart()" class="btn btn-delete">Clear cart</button>
+        <button class="btn">Pruchase</button>
+        </div>
         `
     }else return
 }

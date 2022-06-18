@@ -134,10 +134,14 @@ let totalAmount = ()=>{
         <h2>Total price:$ ${amount}</h2>
         <div class="btn-cart-wrapper">
         <button onclick="clearCart()" class="btn btn-delete">Clear cart</button>
-        <button class="btn">Pruchase</button>
+        <button class="btn" onclick="purchaseAlert()">Pruchase</button>
         </div>
         `
     }else return
+}
+
+function purchaseAlert () {
+    alert('Sorry, this is not a real shop. You did not purchase anything.')
 }
 
 totalAmount();

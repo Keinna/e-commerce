@@ -1,4 +1,4 @@
-var productItemsData = [
+let productItemsData = [
     {
         id:"gfdgdf",
         name:'tent',

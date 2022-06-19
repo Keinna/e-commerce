@@ -7,14 +7,14 @@ let shoppingCartAmount = JSON.parse(localStorage.getItem("data")) || [];
 let generateProducts = () =>{
     //map wil target 1 by 1
     return (products.innerHTML = productItemsData.map((x) => {
-        let{id, name, price, desc, img} = x
+        let{id, brand, name, price, desc, img} = x
         //if you can find something than store. If not return empty arry
         let searchAmount = shoppingCartAmount.find((x) => x.id === id) || []
         return`
         <div id=product-id${id} class="product">
                     <img class="product-img" src="${img}" alt="">
                     <div class="product-desc">
-                        <span class="product-brand">Brand</span>
+                        <span class="product-brand">${brand}</span>
                         <h5 class="product-name">${name}</h5>
                         <p class="product-text">${desc}</p>
                         <div class="product-price-cart-wrapper">

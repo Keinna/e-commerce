@@ -483,7 +483,7 @@ flex-direction: column;
 }
 @media screen and (max-width:768px) {
    .banner-box-lg{
-    height: 57vh;
+    height: 52vh;
     padding: 0 20px;
    }
 }
@@ -493,7 +493,7 @@ flex-direction: column;
 }
 
 .banner-box-title--lg{
-    margin: 1rem 0 0 0;
+    margin: 2rem 0;
 }
 
 .banner-box-lg-subtitle{

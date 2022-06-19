@@ -1,26 +1,3 @@
-const navSlide = () => {
-    const burger = document.querySelector('.mobile-burger')
-    const nav = document.querySelector('.nav-items')
-    const navItems = document.querySelectorAll('.nav-items li')
-    //toggle nav
-    burger.addEventListener('click', () =>{
-        nav.classList.toggle('nav-active');
-
-            //animate items. Need index for delay animation (0.3 is initial delay)
-    navItems.forEach((link,index) =>{
-        if(link.style.animation){
-            link.style.animation = '';
-        }else{
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
-        }
-    })
-    //burger animation
-    burger.classList.toggle('toggle')
-    })
-}
-
-navSlide();
-
 let products = document.getElementById('products')
 
 //update amount in cart nav + get data || nothing if there is no data
@@ -41,7 +18,7 @@ let generateProducts = () =>{
                         <h5 class="product-name">${name}</h5>
                         <p class="product-text">${desc}</p>
                         <div class="product-price-cart-wrapper">
-                            <h4 class="product-price">${price}</h4>
+                            <h4 class="product-price">$ ${price}</h4>
                             <div class="product-amount-wrapper">
                                 <i onclick="decrement(${id})" class="bi bi-dash-circle"></i>
                                 <div id=${id} class="product-amount">

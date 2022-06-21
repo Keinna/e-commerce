@@ -134,7 +134,7 @@ let totalAmount = ()=>{
         <h2>Total price:$ ${amount}</h2>
         <div class="btn-cart-wrapper">
         <button onclick="clearCart()" class="btn btn-delete">Clear cart</button>
-        <button class="btn" onclick="purchaseAlert()">Pruchase</button>
+        <button class="btn" onclick="purchaseAlert()">Purchase</button>
         </div>
         `
     }else return
